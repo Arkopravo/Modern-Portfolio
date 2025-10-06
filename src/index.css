@@ -12,7 +12,7 @@
 
     --animate-float: float 6s ease-in-out infinite;
     --animate-pulse-subtle: pulse-subtle 4s ease-in-out infinite;
-    --animate--fade-in: fade-in 0.7s ease-out forwards;
+    --animate-fade-in: fade-in 0.7s ease-out forwards;
     --animate-fade-in-delay-1: fade-in 0.7s ease-out 0.2s forwards;
     --animate-fade-in-delay-2: fade-in 0.7s ease-out 0.4s forwards;
     --animate-fade-in-delay-3: fade-in 0.7s ease-out 0.6s forwards;
@@ -160,14 +160,10 @@
     border: 1px solid transparent;
 }
 
-/* @utility cosmic-button {
-    @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139, 92, 246, 0.5)] hover:scale-105 active:scale-95;
-} */
-
-
 @utility cosmic-button {
-    @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium transition-all duration-300 hover:scale-105 active:scale-95;
-    box-shadow: 0 0 10px rgba(139, 92, 246, 0.5);
+  @apply px-6 py-2 rounded-full bg-primary text-primary-foreground font-medium 
+         transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+         hover:scale-105 active:scale-95;
 }
 
 
@@ -187,4 +183,17 @@
     margin: 0 auto;
     padding: 0;
     text-align: center;
+}
+
+
+
+/* Hide scrollbar for Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
 }
