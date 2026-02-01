@@ -80,7 +80,7 @@ const ContactSection = () => {
                                         href="tel:+11234567890"
                                         className="text-muted-foreground hover:text-primary transition-colors"
                                     >
-                                        +91 (811) 638-2354
+                                        +91-8116382354
                                     </a>
                                 </div>
                             </div>
